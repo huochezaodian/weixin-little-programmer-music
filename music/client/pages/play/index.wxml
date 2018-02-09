@@ -1,0 +1,39 @@
+<!--pages/play/index.wxml-->
+<view class='play-wrap'>
+  <view class='name'>{{name}}</view>
+  <view class='author'>-  {{author}}  -</view>
+  <view class='pic'>
+    <image src='{{poster}}'></image>
+  </view>
+  <view class='lrc-wrap'>
+    <view class='wrap' style='top:{{top + "px"}}'>
+      <text wx:for='{{lrcList}}' wx:key='{{index}}' class='{{sec == item.time?"active" : ""}}'>{{item.txt}}</text>
+    </view>
+  </view>
+  <view class='progress-wrap'>
+    <view class='time'>{{time}}</view>
+    <view class='progress' style='width:{{progress}}'></view>
+    <view class='total'>{{totalTime}}</view>
+  </view>
+  <view class='controler'>
+    <view class='type'>
+      <image src='../../image/one-active.png'></image>
+    </view>
+    <view class='down' bindtap='handleRewind'>
+      <image src='../../image/rewind-active.png'></image>
+    </view>
+    <view class='play'>
+      <!-- <image src='{{status == "play" ? "../../image/play-active.png" : "../../image/pause-active.png"}}' bindtap='handlePlay' ></image> -->
+      <image src='../../image/play-active.png' bindtap='handlePlay' hidden='{{status !== "play"}}'></image>
+      <image src='../../image/pause-active.png' bindtap='handlePlay' hidden='{{status !== "pause"}}'></image>
+      <!-- <view style='background-url:{{status == "play" ? "../../image/play-active.png" : "../../image/pause-active.png"}}'  bindtap='handlePlay' ></view> -->
+    </view>
+    <view class='forward' bindtap='handleForward'>
+      <image src='../../image/forward-active.png'></image>
+    </view>
+    <view class='reset' bindtap='handleReset'>
+      <image src='../../image/reset-active.png'></image>
+    </view>
+  </view>
+  <audio src="{{src}}" id="myAudio" binderror="handleError" bindtimeupdate="handleProgress" loop bindpause="handlePlay"></audio>
+</view>

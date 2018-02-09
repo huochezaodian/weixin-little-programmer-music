@@ -1,0 +1,60 @@
+/**index.wxss**/
+page {
+  background: #F6F6F6;
+}
+
+.search{
+  width: 100%;
+  display: flex;
+  margin-left: 100rpx;
+  margin-bottom: 60rpx;
+}
+
+.search input{
+  width: 700rpx;
+  margin-left: 40rpx;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .item {
+  width: 100%;
+  font-size: 24rpx;
+  display: flex;
+  border-bottom:1rpx solid #ddd;
+  padding: 10rpx 0;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.content .item .num{
+  line-height: 100rpx;
+  font-size: 40rpx;
+  display:inline-block;
+  vertical-align:top;
+  width: 100rpx;
+  text-align: center;
+}
+
+.content .item image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.content .item .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 40rpx;
+  color: #666;
+  width: 520rpx;
+}
+
+.loading{
+  line-height: 200rpx;
+  font-size: 40rpx;
+  color: #ccc;
+}

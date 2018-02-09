@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "新歌榜",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance": 0
+}

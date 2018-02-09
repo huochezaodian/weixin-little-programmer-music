@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- search -->
+  <view class="search">
+    <icon type="search" size="30"/>
+    <input placeholder="搜索" bindinput="search"/>
+  </view>
+  <view class="content">
+    <view class='item' wx:for='{{songlist}}' wx:key='index' bindtap='play' data-item="{{item}}">
+      <text class='num'>{{index + 1}}</text>
+      <image 
+        src='{{item.imageurl}}'>
+      </image>
+      <view class='info'>
+        <text class='songName'>{{item.songname}}</text>
+        <text class='singer'>{{item.singers}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='loading' hidden='{{num == 100 || songlist.length == 0}}'>上滑加载更多</view>
+</view>

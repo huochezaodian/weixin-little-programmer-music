@@ -1,0 +1,69 @@
+/**index.wxss**/
+page {
+  background: #F6F6F6;
+}
+
+.header{
+  width: 100%;
+  position: relative;
+}
+
+.header image{
+  width: 100%;
+}
+.header .info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 20rpx;
+  margin-bottom: 30rpx;
+}
+.header .info .text{
+  color: #F6F6F6;
+  font-size: 22rpx;
+  line-height: 30rpx;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .item {
+  width: 100%;
+  font-size: 24rpx;
+  display: flex;
+  border-bottom:1rpx solid #ddd;
+  padding: 10rpx 0;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.content .item .num{
+  line-height: 100rpx;
+  font-size: 40rpx;
+  display:inline-block;
+  vertical-align:top;
+  width: 100rpx;
+  text-align: center;
+}
+
+.content .item image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.content .item .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 40rpx;
+  color: #666;
+  width: 520rpx;
+}
+
+.loading{
+  line-height: 200rpx;
+  font-size: 40rpx;
+  color: #ccc;
+}

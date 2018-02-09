@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- title -->
+  <view class="header">
+    <image src='{{topinfo.pic_v12}}'></image>
+    <view class='info'>
+      <view class='text'>{{topinfo.info[1]}}</view>
+      <view class='text'>{{topinfo.info[2]}}</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class='item' wx:for='{{songlist}}' wx:key='index' bindtap='play' data-item="{{item}}">
+      <text class='num'>{{index + 1}}</text>
+      <image 
+        src='{{item.data.imageurl}}'>
+      </image>
+      <view class='info'>
+        <text class='songName'>{{item.data.songname}}</text>
+        <text class='singer'>{{item.data.singers}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='loading' hidden='{{num == 300 || songlist.length == 0}}'>上滑加载更多</view>
+</view>

@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/hot/index",
+    "pages/new/index",
+    "pages/search/index",
+    "pages/play/index"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "music",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "backgroundColor":"#F6F6F6",
+    "selectedColor":"#1296db",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index-active.png"
+      },
+      {
+        "pagePath":"pages/hot/index",
+        "text":"热歌榜",
+        "iconPath":"image/hot.png",
+        "selectedIconPath": "image/hot-active.png"
+      },
+      {
+        "pagePath": "pages/new/index",
+        "text":"新歌榜",
+        "iconPath": "image/new.png",
+        "selectedIconPath": "image/new-active.png"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "搜索",
+        "iconPath": "image/search.png",
+        "selectedIconPath": "image/search-active.png"
+      }
+    ]
+  }
+}

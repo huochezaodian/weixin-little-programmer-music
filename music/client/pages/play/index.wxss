@@ -1,0 +1,106 @@
+/* pages/play/index.wxss */
+page{
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+.play-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+}
+
+.play-wrap view{
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.play-wrap view image{
+  width: 500rpx;
+}
+
+.play-wrap .author{
+  font-size: 40rpx;
+}
+
+.play-wrap .author{
+  font-size: 30rpx;
+}
+
+.play-wrap .progress-wrap{
+  background-color: #ffffff;
+  border-radius: 5rpx;
+  height: 10rpx;
+  width: 500rpx;
+  position: relative;
+}
+
+.play-wrap .lrc-wrap{
+  height: 250rpx;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.play-wrap .lrc-wrap .wrap{
+  position: absolute;
+  top: 59px;
+  width: 100%;
+  transition: top .3s ease-out;
+}
+
+.play-wrap .lrc-wrap .wrap text{
+  height: 60rpx;
+  font-size: 32rpx;
+  line-height: 60rpx;
+  display: block;
+  overflow: scroll;
+}
+
+.play-wrap .lrc-wrap .wrap text.active{
+  color: #1296db;
+}
+
+.play-wrap .progress-wrap .progress{
+  background-color: #1296db;
+  width: 0%;
+  border-radius: 5rpx;
+  height: 10rpx;
+  transition: width 0.1s linear;
+}
+
+.play-wrap .progress-wrap .time{
+  position: absolute;
+  left: -54rpx;
+  font-size: 20rpx;
+  top: -10rpx;
+}
+
+.play-wrap .progress-wrap .total{
+  position: absolute;
+  right: -54rpx;
+  font-size: 20rpx;
+  top: -10rpx;
+}
+
+.play-wrap .controler{
+  display: flex;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.play-wrap .controler view{
+  margin: 0 20rpx;
+}
+
+.play-wrap .controler image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.play-wrap .controler .play image{
+  width: 100rpx;
+  height: 100rpx;
+}
