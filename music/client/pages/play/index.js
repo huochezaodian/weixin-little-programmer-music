@@ -120,18 +120,22 @@ Page({
     this.audioCtx.seek(this.data.currentTime - 5);
   },
   // 播放/暂停
-  handlePlay() {
+  handleStatus() {
     if(this.data.status == "play"){
-      this.audioCtx.pause();
       this.setData({
         status: 'pause'
       });
     }else{
-      this.audioCtx.play();
       this.setData({
         status: 'play'
       });
     }
+  },
+  handlePlay() {
+    this.audioCtx.play();
+  },
+  handlePause() {
+    this.audioCtx.pause();
   },
   // 前进
   handleForward() {

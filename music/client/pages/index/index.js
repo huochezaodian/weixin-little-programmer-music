@@ -15,7 +15,8 @@ Page({
     onShareAppMessage () {
       return {
         title: '不习惯',
-        path: '/page/index/index'
+        desc: '不习惯',
+        path: '/pages/index/index'
       }
     },
     // 用户登录示例

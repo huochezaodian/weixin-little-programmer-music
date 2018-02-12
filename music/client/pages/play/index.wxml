@@ -24,7 +24,7 @@
     </view>
     <view class='play'>
       <!-- <image src='{{status == "play" ? "../../image/play-active.png" : "../../image/pause-active.png"}}' bindtap='handlePlay' ></image> -->
-      <image src='../../image/play-active.png' bindtap='handlePlay' hidden='{{status !== "play"}}'></image>
+      <image src='../../image/play-active.png' bindtap='handlePause' hidden='{{status !== "play"}}'></image>
       <image src='../../image/pause-active.png' bindtap='handlePlay' hidden='{{status !== "pause"}}'></image>
       <!-- <view style='background-url:{{status == "play" ? "../../image/play-active.png" : "../../image/pause-active.png"}}'  bindtap='handlePlay' ></view> -->
     </view>
@@ -35,5 +35,5 @@
       <image src='../../image/reset-active.png'></image>
     </view>
   </view>
-  <audio src="{{src}}" id="myAudio" binderror="handleError" bindtimeupdate="handleProgress" loop bindpause="handlePlay"></audio>
+  <audio src="{{src}}" id="myAudio" binderror="handleError" bindtimeupdate="handleProgress" loop bindpause="handleStatus" bindplay="handleStatus"></audio>
 </view>

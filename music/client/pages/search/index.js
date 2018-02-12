@@ -56,7 +56,7 @@ Page({
       const data = e.currentTarget.dataset.item;
       const newData = {
         albummid: data.albummid,
-        name: data.albumname,
+        name: data.songname,
         author: data.singers,
         songmid: data.songmid
       };
